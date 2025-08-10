@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript calculater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contaner">
+        <!-- this code aveleable to tack input from user -->
+        <input type="text" class="inputScreen" id="inputScreen" placeholder="0.0" value="" readonly>
+        <div class="keyContaner">
+            <button class="operater" onclick="displa('+')">+</button>
+            <button class="nubers" onclick="displa(1)">1</button>
+            <button class="nubers" onclick="displa(2)">2</button>
+            <button class="nubers" onclick="displa(3)">3</button>
+            <button class="operater" onclick="displa('-')">-</button>
+            <button class="nubers" onclick="displa(4)">4</button>
+            <button class="nubers" onclick="displa(5)">5</button>
+            <button class="nubers" onclick="displa(6)">6</button>
+            <button class="operater" onclick="displa('x')">x</button>
+            <button class="nubers" onclick="displa(7)">7</button>
+            <button class="nubers" onclick="displa(8)">8</button>
+            <button class="nubers" onclick="displa(9)">9</button>
+            <button class="operater" onclick="displa('÷')">÷</button>
+            <button class="nubers" onclick="sqr()">X^2</button>
+            <button class="nubers"onclick="cub()">X^3</button>
+            <button class="nubers" onclick="nth()">X^X</button>
+            <button class="operater" onclick="displa('%')">%</button>
+            <button class="nubers" onclick="equal('=')">=</button>
+            <button class="nubers" onclick="displa('.')">.</button>
+            <button class="nubers" onclick="cler()">Clear</button>
+            <button class="operater" onclick="displa('0')">0</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
