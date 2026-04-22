@@ -5,7 +5,9 @@
 // HelloWorld() 
 // import 'package:calclater/widget/click_button.dart';
 // ClickButton()
-import 'package:calclater/widget/counter_app.dart';
+// import 'package:calclater/widget/counter_app.dart';
+// CounterApp()
+import 'package:calclater/screen/todo_screen.dart';
 import 'package:flutter/material.dart';
 void main(){
   runApp(Calculater());
@@ -17,7 +19,7 @@ class Calculater extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:CounterApp()
+      home:TodoScreen()
     );
   }
 }
