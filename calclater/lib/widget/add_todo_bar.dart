@@ -24,7 +24,7 @@ class AddTodoBar extends StatelessWidget {
             ),
              ),
              SizedBox(width: 10,),
-             ElevatedButton(onPressed: onAdd, child: Icon(Icons.add_box))
+             IconButton(onPressed: onAdd, icon: Icon(Icons.add,color: Colors.green,size: 40,))
         ],
       ),
     );
