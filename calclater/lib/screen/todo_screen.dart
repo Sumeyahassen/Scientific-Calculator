@@ -2,6 +2,7 @@
 import 'dart:math';
 import 'package:calclater/model/todo.dart';
 import 'package:calclater/widget/add_todo_bar.dart';
+import 'package:calclater/widget/todo_items.dart';
 import 'package:flutter/material.dart';
 class TodoScreen extends StatefulWidget {
   // consteracter
@@ -35,6 +36,14 @@ class _TodoScreenState extends State<TodoScreen> {
       body:Column(
        children: [
          AddTodoBar(controller:controller,onAdd:addTodo),
+         Expanded(child:todos.isEmpty? Center(
+          child: Text("No task yet add task"),
+         ):ListView.builder(
+          itemCount: todos.length,
+          itemBuilder: (context, index) {
+            return TodoItems(todo: todos[index], onDelet: ()=>deletTodo(todos[index].id));
+          } ,
+         ))
        ],
       ) ,
     );
