@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class TodoItems extends StatelessWidget {
   final Todo todo;
  final VoidCallback onDelet;
-const TodoItems({ Key? key,required this.todo,required this.onDelet }) : super(key: key);
+const TodoItems({ Key? key,required this.todo,required this.onDelet });
 
   @override
   Widget build(BuildContext context){

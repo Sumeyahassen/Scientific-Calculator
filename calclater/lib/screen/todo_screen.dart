@@ -19,6 +19,7 @@ class _TodoScreenState extends State<TodoScreen> {
     if(controller.text.isNotEmpty){
       setState(() {
         todos.add(Todo(id: Random().nextInt(1000).toString(), text: controller.text));
+        // after the button is click  cliear contante
         controller.clear();
       });
        
@@ -38,7 +39,8 @@ class _TodoScreenState extends State<TodoScreen> {
          AddTodoBar(controller:controller,onAdd:addTodo),
          Expanded(child:todos.isEmpty? Center(
           child: Text("No task yet add task"),
-         ):ListView.builder(
+         ):
+         ListView.builder(
           itemCount: todos.length,
           itemBuilder: (context, index) {
             return TodoItems(todo: todos[index], onDelet: ()=>deletTodo(todos[index].id));
